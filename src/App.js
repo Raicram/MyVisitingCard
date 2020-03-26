@@ -35,15 +35,15 @@ class Main extends React.Component{
   render(){
     return(
       <div className="me">
-        <div className="hvh">
+        <div className="mtext">
           Hej,<br /> nazywam się <span className="name">Marcin Niemyjski</span>.
         </div>
-        <div className="hvh">
+        <div className="mtext">
           <Typist>
             Programuję strony z użyciem <span className="react">React.js</span>
           </Typist>
         </div>
-        <div className="imgi">
+        <div className="mimg">
           <Imgur />
         </div>
       </div>

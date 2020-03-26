@@ -21,10 +21,10 @@
 .react{
   color:#61dbfb
 }
-.hvh{
+.mtext{
   text-align: center;
 }
-.imgi{
+.mimg{
   text-align: center;
   margin-top: 5%;
 }
@@ -40,7 +40,7 @@
   background-color: rgb(36, 36, 36);
   color: #bdbab1;
 }
-.imgi img{
+.mimg img{
   width:40%;
 }
 .content svg{
@@ -99,7 +99,7 @@
     font-family: 'Baloo 2', cursive;
     font-size: 2rem;
   }
-  .imgi img{
+  .mimg img{
     width:45%;
   }
   .content svg{

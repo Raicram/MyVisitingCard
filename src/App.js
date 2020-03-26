@@ -211,10 +211,10 @@ class Contact extends React.Component{
   render(){
     return(
       <div className="content" id="contact">
-        <div className="logos">
+        <div className="cont">
           <h2>You can find me and contact by:</h2>
         </div>
-        <div className="logos">
+        <div className="cont">
           <a href="https://www.linkedin.com/in/marcin-niemyjski-2ab761194">
              <img src={lnked} alt="img" width="50%"/>
           </a>

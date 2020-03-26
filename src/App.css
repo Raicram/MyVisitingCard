@@ -74,6 +74,11 @@
 .logotype{
   margin: 1%;
 }
+.cont{
+  display: inline-block;
+  width: 50%;
+  padding: 3%;
+}
 }
 @media screen and (max-width:600px){
   .content{
@@ -86,6 +91,13 @@
     align-items: center;
     background-color: rgb(36, 36, 36);
     color: #bdbab1;
+  }
+  .me{
+    margin-top: 30%;
+    align-items: center;
+    color: #bdbab1!important;
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
   }
   .imgi img{
     width:45%;
@@ -120,6 +132,12 @@
   }
   .logotype{
     margin: 1%;
+  }
+  .cont{
+    width: 100%;
+    margin-top: 20%;
+    padding: 5%;
+    display: inline-block;
   }
 }
 .name{

@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 import gsap from 'gsap';
-//import { Controller, Scene } from 'react-scrollmagic';
+import { Controller, Scene } from 'react-scrollmagic';
 import {ReactComponent as Anim} from './img/in.svg';
 import {Link} from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-//import {Container, Row, Col} from 'react-bootstrap';
 import Typist from 'react-typist';
 import { Tween} from 'react-gsap';
 import logo from './img/program.png';
@@ -211,17 +210,21 @@ class Contact extends React.Component{
   render(){
     return(
       <div className="content" id="contact">
-        <div className="cont">
-          <h2>You can find me and contact by:</h2>
-        </div>
-        <div className="cont">
-          <a href="https://www.linkedin.com/in/marcin-niemyjski-2ab761194">
-             <img src={lnked} alt="img" width="50%"/>
-          </a>
-          <a href="https://github.com/Raicram">
-             <img src={ghl} alt="img" width="50%"/>
-          </a>
-        </div>
+        <Controller>
+          <Scene>
+            <div className="cont">
+              <h2>You can find me and contact by:</h2>
+            </div>
+          </Scene>
+            <div className="cont">
+              <a href="https://www.linkedin.com/in/marcin-niemyjski-2ab761194">
+                <img src={lnked} alt="img" width="50%"/>
+              </a>
+              <a href="https://github.com/Raicram">
+                <img src={ghl} alt="img" width="50%"/>
+              </a>
+            </div>
+        </Controller>
       </div>
     )
   }

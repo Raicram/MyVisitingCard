@@ -1,10 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### `Project view`
 
-In the project directory, you can run:
-
-![alt text](https://github.com/Raicram/MyVisitingCard/blob/master/src/img/draw.svg)
+![alt text](https://github.com/Raicram/MyVisitingCard/blob/master/src/img/view.png)
 
 
 ### `npm start`

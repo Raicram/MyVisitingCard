@@ -17,7 +17,8 @@ import rboot from './img/rboot.png';
 import python from './img/python.png';
 import git from './img/git.png';
 import js from './img/js.png';
-
+import ghl from './img/githublogo.png';
+import lnked from './img/lnked.png';
 
 
 const Imgur = () =>{
@@ -53,7 +54,7 @@ class Main extends React.Component{
 class Start extends React.Component{
   render(){
     return(
-      <div className="start" id="home">
+      <div className="content" id="home">
           <div className="nav">
             <Navbar bg="darking" variant="dark" expand="lg" className="navig" fixed="top">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -67,7 +68,7 @@ class Start extends React.Component{
                       smooth={true}
                       duration={600}
                 >Home</Link></Nav.Link>
-                <Nav.Link href="#about">
+                <Nav.Link>
                 <Link
                       activeClass="active"
                       to="about"
@@ -87,7 +88,7 @@ class Start extends React.Component{
                 <Nav.Link>
                 <Link
                       activeClass="active"
-                      to="sontact"
+                      to="contact"
                       spy={true}
                       smooth={true}
                       duration={600}
@@ -144,7 +145,7 @@ class About extends React.Component{
   render(){
     return(
       <div className="content" id="about"
-      onMouseOver={() => this.tl1.play()}>
+      onWheel={() => this.tl1.play()}>
             <div ref={ div => this.wrapper = div }  className="aboutme">
               <Anim />
             </div>
@@ -206,6 +207,25 @@ class Skills extends React.Component{
     )
   }
 }
+class Contact extends React.Component{
+  render(){
+    return(
+      <div className="content" id="contact">
+        <div className="logos">
+          <h2>You can find me and contact by:</h2>
+        </div>
+        <div className="logos">
+          <a href="https://www.linkedin.com/in/marcin-niemyjski-2ab761194">
+             <img src={lnked} alt="img" width="50%"/>
+          </a>
+          <a href="https://github.com/Raicram">
+             <img src={ghl} alt="img" width="50%"/>
+          </a>
+        </div>
+      </div>
+    )
+  }
+}
 
 function App() {
   return (
@@ -213,6 +233,7 @@ function App() {
         <Start />
         <About />
         <Skills />
+        <Contact />
       </div>
   );
 }

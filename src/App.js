@@ -177,30 +177,80 @@ class Skills extends React.Component{
     return(
           <div className="content" id="skills">
               <div className="logos">
+              <Controller>
+              <Scene
+              pin={false}
+              duration={200}
+              offset={-200}
+            >
+            <Tween from={{y: '+=100',autoAlpha:0}}>
                   <div className="logotext">
                     HTML5/CSS3
                     <img src={htmlcss} alt="img" width="15%"/>
                   </div>
+            </Tween>
+            </Scene>
+            <Scene
+              pin={false}
+              duration={200}
+              offset={-200}
+            >
+            <Tween from={{y: '+=100',autoAlpha:0}}>
                   <div className="logotext">
                     JavaScript ES6
                     <img src={js} alt="img" width="15%"/>
                   </div>
+            </Tween>
+            </Scene>
+            <Scene
+              pin={false}
+              duration={300}
+              offset={-300}
+            >
+            <Tween from={{y: '+=100',autoAlpha:0}}>
                   <div className="logotext">
                     React.js
                     <img src={reactlogo} alt="img" width="15%"/>
                   </div>
+            </Tween>
+            </Scene>
+            <Scene
+              pin={false}
+              duration={300}
+              offset={-300}
+            >
+            <Tween from={{y: '+=100',autoAlpha:0}}>
                   <div className="logotext">
                     React bootstrap
                     <img src={rboot} alt="img" width="15%"/>
                   </div>
+            </Tween>
+            </Scene>
+            <Scene
+              pin={false}
+              duration={400}
+              offset={-400}
+            >
+            <Tween from={{y: '+=100',autoAlpha:0}}>
                   <div className="logotext">
                     Python 3
                     <img src={python} alt="img" width="15%"/>
                   </div>
+            </Tween>
+            </Scene>
+            <Scene
+              pin={false}
+              duration={400}
+              offset={-400}
+            >
+            <Tween from={{y: '+=100',autoAlpha:0}}>
                   <div className="logotext">
                     Git
                     <img src={git} alt="img" width="15%"/>
                   </div>
+            </Tween>
+            </Scene>
+                  </Controller>
               </div>
           </div>
     )
@@ -211,11 +261,21 @@ class Contact extends React.Component{
     return(
       <div className="content" id="contact">
         <Controller>
-          <Scene>
-            <div className="cont">
-              <h2>You can find me and contact by:</h2>
-            </div>
+          <Scene
+                  pin={false}
+                  duration={80} 
+          >
+            <Tween from={{ opacity: 0, y: '-=100'}}>
+              <div className="cont">
+                <h2>Możesz mnie znaleźć na:</h2>
+              </div>
+            </Tween>
           </Scene>
+          <Scene
+              pin={false}
+              duration={150}
+          >
+            <Tween from={{opacity: 0, y: '+=100'}}>
             <div className="cont">
               <a href="https://www.linkedin.com/in/marcin-niemyjski-2ab761194">
                 <img src={lnked} alt="img" width="50%"/>
@@ -224,6 +284,8 @@ class Contact extends React.Component{
                 <img src={ghl} alt="img" width="50%"/>
               </a>
             </div>
+            </Tween>
+          </Scene>
         </Controller>
       </div>
     )

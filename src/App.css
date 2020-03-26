@@ -76,8 +76,9 @@
 }
 .cont{
   display: inline-block;
-  width: 50%;
+  width: 80%;
   padding: 3%;
+  margin-left: 10%;
 }
 }
 @media screen and (max-width:600px){
